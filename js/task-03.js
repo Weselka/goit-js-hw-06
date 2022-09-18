@@ -25,5 +25,21 @@ const images = [
 const list = document.querySelector('.gallery');
 console.log(list)
 
-const li = '<li class="item"> <img class="photo" src="url" alt="alt"> </li>';
-list.insertAdjacentHTML("afterend", li);
+// const makeItem = options => {
+//   // return options.map(option => {
+//   //   const li =
+//   //     '<li class="item"> <img class="photo" src="url" alt="alt"> </li>';
+//   //   return li;
+//   });
+// };
+
+// const elements = makeItem(images);
+
+// list.insertAdjacentHTML('afterend', li);
+
+
+
+
+
+// const li = '<li class="item"> <img class="photo" src="url" alt="alt"> </li>';
+// list.insertAdjacentHTML("afterend", li);
