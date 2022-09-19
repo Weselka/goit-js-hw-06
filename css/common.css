@@ -32,5 +32,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   grid-gap: 50px;
+  margin-bottom: 20px;
 }
 
