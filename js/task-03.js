@@ -23,23 +23,13 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
-console.log(list)
 
-// const makeItem = options => {
-//   // return options.map(option => {
-//   //   const li =
-//   //     '<li class="item"> <img class="photo" src="url" alt="alt"> </li>';
-//   //   return li;
-//   });
-// };
+const makeItem = ({ url, alt }) => {
+  const liEl = `<li class="item"><img class="photo" src="${url}" alt="${alt}"></li>`;
 
-// const elements = makeItem(images);
+  return liEl;
+};
 
-// list.insertAdjacentHTML('afterend', li);
+const liEl = images.map(makeItem);
 
-
-
-
-
-// const li = '<li class="item"> <img class="photo" src="url" alt="alt"> </li>';
-// list.insertAdjacentHTML("afterend", li);
+list.insertAdjacentHTML('afterend', liEl);

@@ -22,3 +22,11 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.item {
+  list-style: none;
+}
+
+.photo {
+  width: 180px;
+}
