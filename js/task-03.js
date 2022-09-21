@@ -29,6 +29,5 @@ const makeItem = ({ url, alt }) => {
 };
 
 const liEl = images.map(makeItem).join('');
-console.log(liEl);
 
 list.insertAdjacentHTML('afterend', liEl);

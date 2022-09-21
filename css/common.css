@@ -23,15 +23,19 @@ button {
   cursor: pointer;
 }
 
+.gallery {
+  display: flex;
+}
+
 .item {
   list-style: none;
+  display: flex;
 }
 
 .photo {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 50px;
   margin-bottom: 20px;
 }
 
