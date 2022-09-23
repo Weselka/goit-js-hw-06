@@ -1,14 +1,10 @@
-// Напиши скрипт, який реагує на зміну значення input#font-size-control (подія input) і змінює інлайн-стиль span#text, оновлюючи властивість font-size. В результаті, перетягуючи повзунок, буде змінюватися розмір тексту.
+const refs = {
+  inputRange: document.querySelector('#font-size-control'),
+  spanText: document.querySelector('#text'),
+};
 
-inputRef: document.querySelector('#font-size-control');
+refs.inputRange.addEventListener('input', onInputChange);
 
-inputRef.addEventListener('input', onInputChange);
-
-function onInputChange(event) {
-//   let inputName = event.currentTarget.value;
-//   if (inputName.trim() === '') {
-//     refs.nameLabel.textContent = 'Anonymous';
-//   } else {
-//     refs.nameLabel.textContent = inputName;
-//   }
+function onInputChange(event) {      
+    refs.spanText.style.fontSize = refs.inputRange.value + 'px';
 }
