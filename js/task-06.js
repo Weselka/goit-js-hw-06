@@ -7,10 +7,10 @@ function onInputBlur(event) {
   const inputAtribute = Number(input.getAttribute('data-length'));
 
   if (inputAtribute === inputValue.length) {
-    input.classList.remove('invalid');
+    input.removeAttribute('class');
     input.classList.add('valid');
   } else {
-    input.classList.remove('valid');
+    input.removeAttribute('class');
     input.classList.add('invalid');    
   }
 }
